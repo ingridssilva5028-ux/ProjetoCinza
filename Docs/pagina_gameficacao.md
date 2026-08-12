@@ -227,3 +227,9 @@ Estrutura:
 O rodapé também será compartilho por todas as páginas, mas por hora cada página tem o seu.
 Cor de fundo azul.
 Há o ano de criação do site e o logo do site centralizados no rodapé.
+
+
+- cor nos icones
+- contorno dos status
+- navbar
+

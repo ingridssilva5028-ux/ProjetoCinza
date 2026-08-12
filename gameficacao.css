@@ -19,13 +19,16 @@ body {
 /* Cores e Variáveis (usadas no código) */
 :root {
     --cor-fundo: #f0f0f0;
-    --cor-navbar: #000;
+    --cor-navbar: #002a57;
     --cor-rodape: #007bff;
     --cor-azul: #007bff;
     --cor-branco: #fff;
     --cor-preto: #000;
     --cor-cinza-escuro: #555;
     --cor-cinza-claro: #ccc;
+    --cor-bronze: #cd7f32;
+    --cor-prata: #c0c0c0;
+    --cor-ouro: #ffd700;
 }
 
 a {
@@ -51,22 +54,22 @@ a {
 }
 
 .search-bar {
-    background-color: var(--cor-branco);
+    background-color: #55555580;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 15px;
-    width: 350px;
+    width: 500px;
 }
 
 .search-text {
-    color: var(--cor-cinza-escuro);
+    color: var(--cor-branco);
     font-size: 14px;
 }
 
 .search-icon {
-    color: var(--cor-cinza-escuro);
+    color: var(--cor-branco);
 }
 
 .nav-actions {
@@ -76,7 +79,7 @@ a {
 }
 
 .btn-notification, .btn-messages {
-    background-color: rgba(85, 85, 85, 0.5); /* Cinza escuro transparente */
+    background-color: #55555580; /* Cinza escuro transparente */
     color: var(--cor-branco);
     width: 40px;
     height: 40px;
@@ -232,6 +235,14 @@ a {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    border: 1px;
+    border-color: #ccc;
+    border-style: solid;
+    border-radius: 4px;
+    padding: 10px;
+    width: 150px;
+    height: 130px;
+    
 }
 
 .icone-status {
@@ -287,12 +298,12 @@ a {
 
 .painel-titulo-wrapper h2 {
     color: var(--cor-preto);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .link-ver-todos {
     color: var(--cor-azul);
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
 }
 
@@ -394,10 +405,31 @@ a {
     gap: 15px;
 }
 
-.posicao {
+.posicao, .posicao-1-lugar, .posicao-2-lugar, .posicao-3-lugar {
     font-weight: bold;
     color: var(--cor-azul);
-    width: 25px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posicao-1-lugar, .posicao-2-lugar, .posicao-3-lugar {
+    border-radius: 100%;
+}
+
+.posicao-1-lugar{
+    color: #FFD700;
+    background-color: #ffd90033;
+}
+.posicao-2-lugar{
+    color: #949494;
+    background-color: #afafaf33;
+}
+.posicao-3-lugar{
+    color: #d97b00;
+    background-color: #d97b0033;
 }
 
 .ranking-card img {
@@ -428,9 +460,17 @@ a {
     gap: 15px;
 }
 
-.icone-medalha {
-    color: var(--cor-azul);
+.icone-medalha-bronze, .icone-medalha-prata, .icone-medalha-ouro {
     font-size: 24px;
+}
+.icone-medalha-bronze {
+    color: var(--cor-bronze);
+}
+.icone-medalha-prata {
+    color: var(--cor-prata);
+}
+.icone-medalha-ouro {
+    color: var(--cor-ouro);
 }
 
 .medalha-info {
@@ -450,12 +490,12 @@ a {
     color: var(--cor-cinza-escuro);
     font-size: 12px;
     margin-bottom: 5px;
-    width: 30%;
+    width: 40%;
 }
 
 .progresso-medalha {
     display: flex;
-    align-items: center;
+    align-items: center; 
     gap: 50px;
 }
 
