@@ -1,0 +1,791 @@
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #ffffff;
+color: #222;
+}
+
+.header {
+height: 85px;
+background: #050505;
+
+display: flex;
+align-items: center;
+
+padding: 0 45px;
+gap: 35px;
+}
+
+.logo {
+color: white;
+font-size: 30px;
+font-weight: bold;
+
+min-width: 315px;
+}
+
+.search {
+height: 47px;
+
+flex: 1;
+
+display: flex;
+
+background:white;
+border-radius: 7px;
+
+overflow: hidden;
+}
+
+.search input {
+flex: 1;
+
+border: none;
+outline: none;
+
+padding: 0 20px;
+
+font-size: 18px;
+
+color: #333;
+}
+
+.search input::placeholder {
+color: #777;
+}
+
+.search button {
+width: 60px;
+
+border: none;
+background:none; 
+
+font-size: 30px;
+
+cursor: pointer;
+}
+
+.header-actions {
+display: flex;
+align-items: center;
+gap: 18px;
+}
+
+.img1{
+    width:10px;
+    height: 10px;
+    font-size: 10px; 
+}
+.icon-button {
+width: 20px;
+height: 20px;
+border: none;
+border-radius: 7px;
+background: white;
+font-size: -10px;  
+cursor: pointer;
+}
+
+.login-button {
+height: 48px;
+
+padding: 0 22px;
+
+border: none;
+border-radius: 6px;
+
+background: #0756c9;
+color: white;
+
+font-size: 17px;
+font-weight: bold;
+
+cursor: pointer;
+}
+
+.login-button:hover,
+.collection-button:hover {
+background: #0645a5;
+}
+
+.menu {
+height: 74px;
+
+background: #111;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+gap: 92px;
+}
+
+.menu-box {
+width: 229px;
+height: 37px;
+
+border: 1px solid #aaa;
+border-radius: 4px;
+}
+
+.view-buttons {
+display: flex;
+gap: 18px;
+}
+
+.view-buttons button {
+background: transparent;
+border: none;
+
+color: white;
+
+font-size: 35px;
+
+cursor: pointer;
+}
+
+.container {
+max-width: 1225px;
+
+margin: 24px auto 28px;
+
+padding: 0 10px;
+}
+
+.profile {
+min-height: 300px;
+
+border: 1px solid #d1d1d1;
+border-radius: 7px;
+
+background: #fafafd;
+
+display: flex;
+align-items: center;
+
+padding: 25px 80px;
+
+gap: 110px;
+}
+
+.profile-photo-area {
+width: 270px;
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+}
+
+.profile-photo {
+width: 173px;
+height: 173px;
+
+border-radius: 50%;
+
+border: 1px solid #aaa;
+
+background: #f0f1f4;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-size: 42px;
+
+color: #b7b9bd;
+}
+
+.change-photo {
+margin-top: 18px;
+
+border: none;
+background: transparent;
+
+color: #164b91;
+
+font-size: 17px;
+font-weight: bold;
+
+cursor: pointer;
+}
+
+.profile-data {
+flex: 1;
+
+display: flex;
+flex-direction: column;
+
+gap: 19px;
+}
+
+.input-row {
+display: flex;
+align-items: center;
+
+gap: 25px;
+}
+
+.input-icon {
+width: 30px;
+
+color: #0756c9;
+
+font-size: 25px;
+
+text-align: center;
+}
+
+.input-row input,
+.exchange {
+width: 100%;
+height: 46px;
+
+border: 1px solid #c9c9c9;
+border-radius: 5px;
+
+background: white;
+
+padding: 0 16px;
+
+font-size: 17px;
+
+outline: none;
+}
+
+.input-row input:focus {
+border-color: #0756c9;
+}
+
+.exchange {
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+}
+
+.exchange strong {
+color: #164b91;
+font-size: 17px;
+}
+
+.section-title {
+height: 50px;
+
+max-width: 300px;
+
+margin: 20px auto;
+
+border: 1px solid #ddd;
+border-radius: 7px;
+
+background: white;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+gap: 12px;
+
+font-size: 18px;
+font-weight: bold;
+
+position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+content: "";
+
+position: absolute;
+
+width: 520px;
+height: 1px;
+
+background: #ddd;
+
+top: 50%;
+}
+
+.section-title::before {
+right: 100%;
+margin-right: 10px;
+}
+
+.section-title::after {
+left: 100%;
+margin-left: 10px;
+}
+
+.section-title span {
+color: #0756c9;
+
+font-size: 25px;
+}
+
+
+.collections {
+display: grid;
+
+grid-template-columns: repeat(4, 1fr);
+
+gap: 28px;
+}
+
+.collection-card {
+border: 1px solid #e0e0e0;
+
+border-radius: 8px;
+
+background: white;
+
+padding: 14px 13px 20px;
+
+text-align: center;
+
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.collection-image {
+height: 168px;
+
+width: 100%;
+
+overflow: hidden;
+
+position: relative;
+
+margin-bottom: 20px;
+
+background: #e9eaed;
+}
+
+
+.vinyl {
+background:
+linear-gradient(
+90deg,
+#315b35,
+#72a34f 35%,
+#3c6338 70%,
+#1d3d28
+);
+}
+
+.vinyl::before {
+content: "";
+
+position: absolute;
+
+width: 160px;
+height: 160px;
+
+border-radius: 50%;
+
+background:
+repeating-radial-gradient(
+circle,
+#050505 0px,
+#050505 4px,
+#191919 5px,
+#191919 7px
+);
+
+right: -10px;
+top: 10px;
+}
+
+.vinyl-disc {
+position: absolute;
+
+width: 42px;
+height: 42px;
+
+border-radius: 50%;
+
+background: #555;
+
+right: 50px;
+top: 69px;
+
+z-index: 2;
+}
+
+.books {
+background: #8d664b;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.book {
+position: absolute;
+
+width: 145px;
+height: 65px;
+
+border-radius: 3px;
+
+background: #201b18;
+
+box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+}
+
+.book-1 {
+width: 150px;
+height: 100px;
+
+background: #25201c;
+
+color: #ddd;
+
+font-family: Georgia, serif;
+
+font-size: 17px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+transform: rotate(-14deg);
+
+z-index: 3;
+}
+
+.book-2 {
+background: #372a20;
+
+transform: rotate(5deg) translateY(28px);
+
+z-index: 2;
+}
+
+.book-3 {
+background: #4d3627;
+
+transform: rotate(8deg) translateY(52px);
+
+z-index: 1;
+}
+
+
+.pokemon-card {
+position: absolute;
+
+width: 60px;
+height: 105px;
+
+border: 3px solid #e4b928;
+border-radius: 5px;
+
+background:
+linear-gradient(
+#dfec7c,
+#62a65b);
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: #f7d21b;
+
+font-size: 25px;
+
+box-shadow: 0 3px 6px rgba(0, 0, 0, .3);
+}
+
+.card-1 {
+left: 28px;
+top: 32px; 
+
+ 
+}
+
+.card-2 {
+left: 73px;
+top: 22px;
+
+}
+
+.card-3 {
+left: 118px;
+top: 25px;
+
+}
+
+.card-4 {
+left: 162px;
+top: 35px;
+
+
+}
+
+.card-5 {
+left: 205px;
+top: 43px;
+
+}
+
+.videogame {
+background: #e7e8eb;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.controller {
+width: 205px;
+height: 100px;
+
+background: #f8f8f8;
+
+border-radius: 38px 38px 48px 48px;
+
+box-shadow:
+0 4px 8px rgba(0, 0, 0, .2);
+
+position: relative;
+}
+
+.dpad {
+position: absolute;
+
+left: 25px;
+top: 30px;
+
+color: #555;
+
+font-size: 32px;
+}
+
+.analog {
+width: 25px;
+height: 25px;
+
+background: #222;
+
+border-radius: 50%;
+
+position: absolute;
+
+top: 47px;
+}
+
+.analog.left {
+left: 75px;
+}
+
+.analog.right {
+left: 112px;
+}
+
+.buttons {
+position: absolute;
+
+right: 20px;
+top: 27px;
+
+display: flex;
+
+gap: 8px;
+}
+
+.buttons span {
+color: #777;
+
+font-size: 18px;
+}
+
+.collection-card h2 {
+font-size: 20px;
+
+margin-bottom: 17px;
+}
+
+.collection-card p {
+font-size: 17px;
+
+margin-bottom: 20px;
+}
+
+.collection-button {
+width: 100%;
+height: 43px;
+
+border: none;
+
+border-radius: 5px;
+
+background: #0756c9;
+
+color: white;
+
+font-size: 17px;
+font-weight: bold;
+
+cursor: pointer;
+
+transition: .2s;
+}
+
+.footer {
+height: 70px;
+
+background: #0756c9;
+
+color: white;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+font-size: 16px;
+}
+
+@media (max-width: 1100px) {
+
+.header {
+padding: 0 20px;
+gap: 20px;
+}
+
+.logo {
+min-width: auto;
+font-size: 24px;
+}
+
+.menu {
+gap: 30px;
+}
+
+.menu-box {
+width: 180px;
+}
+
+.profile {
+gap: 50px;
+padding: 25px 40px;
+}
+
+.collections {
+grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+
+@media (max-width: 800px) {
+
+.header {
+height: auto;
+
+flex-wrap: wrap;
+
+padding: 15px;
+}
+
+.logo {
+width: 100%;
+}
+
+.search {
+order: 3;
+width: 100%;
+flex-basis: 100%;
+}
+
+.header-actions {
+margin-left: auto;
+}
+
+.menu {
+display: none;
+}
+
+.profile {
+flex-direction: column;
+
+gap: 25px;
+
+padding: 30px 20px;
+}
+
+.profile-photo-area {
+width: 100%;
+}
+
+.profile-data {
+width: 100%;
+}
+
+.section-title::before,
+.section-title::after {
+display: none;
+}
+
+}
+
+
+@media (max-width: 550px) {
+
+.header-actions {
+width: 100%;
+
+justify-content: flex-end;
+}
+
+.login-button {
+font-size: 14px;
+
+padding: 0 12px;
+}
+
+.icon-button {
+width: 42px;
+height: 42px;
+}
+
+.container {
+margin-top: 15px;
+
+padding: 0 8px;
+}
+
+.profile {
+border-radius: 5px;
+}
+
+.input-row {
+gap: 10px;
+}
+
+.input-icon {
+width: 25px;
+}
+
+.collections {
+grid-template-columns: 1fr;
+
+gap: 18px;
+}
+
+.collection-image {
+height: 190px;
+}
+
+.footer {
+text-align: center;
+
+padding: 0 15px;
+
+font-size: 14px;
+}
+
+}
